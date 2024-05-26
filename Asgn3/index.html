@@ -1,0 +1,488 @@
+<link href = "css/corestyle.css" type = "text/css" rel ="stylesheet">
+
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+<link href = "css/navigation.css" type = "text/css" rel ="stylesheet">
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <a href="" class="cs-logo" aria-label="back to home">
+            <img src="image/Logo.png" alt="logo" width="400" height="29" aria-hidden="true" decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link cs-active">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            About
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link cs-dropdown-toggle">Services</a>
+                        <ul class="cs-dropdown-menu">
+                            <li><a href="">Renovations</a></li>
+                            <li><a href="">Carpentry Works</a></li>
+                            <li><a href="">Property Maintenance</a></li>
+                        </ul>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            About Us
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            FAQ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <a href="" class="cs-button-solid cs-nav-button">Contact Us</a>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button> -->
+    </div>
+</header>
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+<link href = "css/hero.css" type = "text/css" rel ="stylesheet">
+
+<section id="hero-227">
+    <div class="cs-container">
+        <div class="cs-flex-group">
+            <span class="cs-topper">Apex Home Service</span>
+            <h1 class="cs-title">Transform Your Home, Elevate Your Lifestyle</h1>
+            <p class="cs-text">
+                At Apex Home Service, we bring your renovation dreams to life with quality craftsmanship, personalized service, and a commitment to excellence. Let us turn your house into your dream home.
+            </p>            
+            <a href="" class="cs-button-solid">Explore More</a>
+            <a href="" class="cs-button-transparent">
+                <img class="cs-img" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg" alt="play icon" width="17" height="17" aria-hidden="true">
+                Learn More
+            </a>
+        </div>
+        <!--Service Cards-->
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a class="cs-link" href="">
+                    <span class="cs-number">01</span>
+                    <h2 class="cs-h2">Renovations</h2>
+                    <p class="cs-item-text">
+                        Comprehensive home renovation solutions tailored to your vision and budget.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a class="cs-link" href="">
+                    <span class="cs-number">02</span>
+                    <h2 class="cs-h2">Carpentry Works</h2>
+                    <p class="cs-item-text">
+                        Expert carpentry services that add elegance and functionality to your space.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a class="cs-link" href="">
+                    <span class="cs-number">03</span>
+                    <h2 class="cs-h2">Property Maintenance</h2>
+                    <p class="cs-item-text">
+                        Reliable maintenance services to keep your property in top condition year-round.
+                    </p>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+
+    <!-- Background Image -->
+    <picture class="cs-picture">
+        <source media="(max-width: 600px)" src="image/renovation_b.jpg">
+        <source media="(min-width: 601px)" src="image/renovation_b.jpg">
+        <img decoding="async" src="image/renovation_b.jpg" alt="renovation_b" width="2250" height="1500" aria-hidden="true">
+    </picture>
+</section>
+                      
+           
+
+                                
+
+<!--                   
+    These "Micro Stitches" are to be placed inside the .cs-content group of Side By Side Stitches.  Typically after the .cs-title or .cs-text. They are used to add more design flair to a Stitch as well as convey more information in a different way.
+-->
+<link href="css/contentflair.css" type="text/css" rel="stylesheet">
+
+<div class="center-container">
+    <ul id="list-1186" class="cs-ul">
+        <li class="cs-li">
+            <picture class="cs-li-picture">
+                <img class="cs-li-icon" aria-hidden="true" src="image/goodquality.png" decoding="async" alt="quality_icon" width="32" height="32" loading="lazy">
+            </picture>
+            <div class="cs-flex">
+                <h3 class="cs-h3">Quality work</h3>
+                <p class="cs-li-text">
+                    Our commitment to excellence ensures that every project is completed to the highest standards, giving you peace of mind with guaranteed quality work.
+                </p>
+            </div>
+        </li>
+        <li class="cs-li">
+            <picture class="cs-li-picture">
+                <img class="cs-li-icon" aria-hidden="true" src="image/hammer.png" decoding="async" alt="hammer_icon" width="32" height="32" loading="lazy">
+            </picture>
+            <div class="cs-flex">
+                <h3 class="cs-h3">Over 10 Years experience</h3>
+                <p class="cs-li-text">
+                    With over a decade of industry experience, our skilled team delivers superior craftsmanship and innovative solutions tailored to your needs.
+                </p>
+            </div>
+        </li>
+        <li class="cs-li">
+            <picture class="cs-li-picture">
+                <img class="cs-li-icon" aria-hidden="true" src="image/24hours.png" decoding="async" alt="24hours_icon" width="32" height="32" loading="lazy">
+            </picture>
+            <div class="cs-flex">
+                <h3 class="cs-h3">After-Hour Services </h3>
+                <p class="cs-li-text">
+                    We understand your busy lifestyle, which is why we offer convenient after-hour services to ensure your projects are completed without disrupting your daily routine.
+                </p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+<link href="css/gallery.css" type="text/css" rel="stylesheet">
+
+<section id="gallery-404">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Gallery</span>
+                <h2 class="cs-title">Some Work from Our Previous Clients</h2>
+            </div>
+            <div class="cs-button-group" id="filter">
+                <button class="cs-button" data-filter="one">
+                    All
+                </button>
+                <button class="cs-button" data-filter="two">
+                    Kitchen
+                </button>
+                <button class="cs-button" data-filter="three">
+                    Bathroom
+                </button>
+                <button class="cs-button" data-filter="four">
+                    Living Room
+                </button>
+                <button class="cs-button" data-filter="five">
+                    Bedroom
+                </button>
+            </div>
+        </div>
+        <div class="cs-gallery-wrapper">
+            <!--Gallery 1-->
+        <div class="cs-gallery" data-category="one">
+            <picture class="cs-image">
+                <img loading="lazy" decoding="async" src="image/kitchen1.jpg" alt="gallery" width="305" height="400">
+            </picture>
+
+            <picture class="cs-image">
+                <img loading="lazy" decoding="async" src="image/kitchen2.jpg" alt="gallery" width="305" height="400">
+            </picture>
+
+            <picture class="cs-image">
+                <img loading="lazy" decoding="async" src="image/kicthen3.jpg" alt="gallery" width="630" height="400">
+            </picture>
+
+            <picture class="cs-image">
+                <img loading="lazy" decoding="async" src="image/bathroom1.jpg" alt="gallery" width="630" height="400">
+            </picture>
+
+            <picture class="cs-image">
+                <img loading="lazy" decoding="async" src="image/bathroom2.jpg" alt="gallery" width="630" height="400">
+            </picture>
+
+            <picture class="cs-image">
+                <img loading="lazy" decoding="async" src="image/bathroom3.jpg" alt="gallery" width="630" height="400">
+            </picture>
+
+            <picture class="cs-image">
+                <img loading="lazy" decoding="async" src="image/livingroom1.jpg" alt="gallery" width="630" height="400">
+            </picture>
+
+            <picture class="cs-image">
+                <img loading="lazy" decoding="async" src="image/livingroom2.jpg" alt="gallery" width="630" height="400">
+            </picture>
+
+            <picture class="cs-image">
+                <img loading="lazy" decoding="async" src="image/livingroom3.jpg" alt="gallery" width="630" height="400">
+            </picture>
+
+            <picture class="cs-image">
+                <img loading="lazy" decoding="async" src="image/bedroom1.jpg" alt="gallery" width="630" height="400">
+            </picture>
+
+            <picture class="cs-image">
+                <img loading="lazy" decoding="async" src="image/bedroom2.jpg" alt="gallery" width="630" height="400">
+            </picture>
+
+            <picture class="cs-image">
+                <img loading="lazy" decoding="async" src="image/bedroom3.jpg" alt="gallery" width="630" height="400">
+            </picture>
+
+        
+        </div>
+        <!--Gallery 2-->
+        <div class="cs-gallery cs-hidden" data-category="two">
+    
+            <picture class="cs-image">
+                <img loading="lazy" decoding="async" src="image/kitchen1.jpg" alt="gallery" width="305" height="400">
+            </picture>
+
+            <picture class="cs-image">
+                <img loading="lazy" decoding="async" src="image/kitchen2.jpg" alt="gallery" width="305" height="400">
+            </picture>
+
+            <picture class="cs-image">
+                <img loading="lazy" decoding="async" src="image/kicthen3.jpg" alt="gallery" width="630" height="400">
+            </picture>
+        </div>
+        <!--Gallery 3-->
+        <div class="cs-gallery cs-hidden" data-category="three">
+            <picture class="cs-image">
+                <img loading="lazy" decoding="async" src="image/bathroom1.jpg" alt="gallery" width="630" height="400">
+            </picture>
+
+            <picture class="cs-image">
+                <img loading="lazy" decoding="async" src="image/bathroom2.jpg" alt="gallery" width="630" height="400">
+            </picture>
+
+            <picture class="cs-image">
+                <img loading="lazy" decoding="async" src="image/bathroom3.jpg" alt="gallery" width="630" height="400">
+            </picture>
+            
+        </div>
+        <!--Gallery 4-->
+        <div class="cs-gallery cs-hidden" data-category="four">
+
+            <picture class="cs-image">
+                <img loading="lazy" decoding="async" src="image/livingroom1.jpg" alt="gallery" width="630" height="400">
+            </picture>
+
+            <picture class="cs-image">
+                <img loading="lazy" decoding="async" src="image/livingroom2.jpg" alt="gallery" width="630" height="400">
+            </picture>
+
+            <picture class="cs-image">
+                <img loading="lazy" decoding="async" src="image/livingroom3.jpg" alt="gallery" width="630" height="400">
+            </picture>
+            
+        </div>
+        <!--Gallery 5-->
+        <div class="cs-gallery cs-hidden" data-category="five">
+            <picture class="cs-image">
+                <img loading="lazy" decoding="async" src="image/bedroom1.jpg" alt="gallery" width="630" height="400">
+            </picture>
+
+            <picture class="cs-image">
+                <img loading="lazy" decoding="async" src="image/bedroom2.jpg" alt="gallery" width="630" height="400">
+            </picture>
+
+            <picture class="cs-image">
+                <img loading="lazy" decoding="async" src="image/bedroom3.jpg" alt="gallery" width="630" height="400">
+            </picture>
+        </div>
+        </div>
+    </div>
+</section>
+<script src="gallery.js"></script>
+                                
+
+
+
+                                
+
+<!-- ============================================ -->
+<!--                Contact Form                  -->
+<!-- ============================================ -->
+<link href="css/contact.css" type="text/css" rel="stylesheet">
+
+<section id="cs-contact-242">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Here To Help</span>
+            <h2 class="cs-title">Contact Us</h2>
+            <p class="cs-text">
+                Whether you have questions about our services, need a quote, or are ready to start your next renovation project, our team is here to assist you. Contact us today and let's transform your vision into reality.
+            </p>
+        </div>
+        <!-- Form -->
+        <form id="cs-form-242" name="Contact Form" method="post">
+            <label class="cs-label">
+                Name
+                <input class="cs-input" required type="text" id="name-242" name="name" placeholder="John/Jane Doe">
+            </label>
+            <label class="cs-label">
+                Email
+                <input class="cs-input" required type="text" id="email-242" name="email" placeholder="name@company.com">
+            </label>
+            <label class="cs-label">
+                Phone
+                <input class="cs-input" required type="text" id="phone-242" name="phone" placeholder="+1 (206) 987-6543">
+            </label>
+            <label class="cs-label">
+                How Did You Find Us
+                <input class="cs-input" type="text" id="find-242" name="find-us" placeholder="Social Media, Family, Friend...">
+            </label>
+            <label class="cs-label cs-label-message">
+                Message
+                <textarea class="cs-input cs-textarea" required name="Message" id="message-242" placeholder="Hello, I am interested in..."></textarea>
+            </label>
+            <button class="cs-button-solid cs-submit" type="submit">Submit Message Now</button>
+        </form>
+        <!-- Contact Info -->
+        <div class="cs-right-section">
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <picture class="cs-icon-wrapper">
+                        <img aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/mail.svg" alt="mail icon" class="cs-icon" width="36" height="36" decoding="async">
+                    </picture>
+                    <div class="cs-flex-group">
+                        <span class="cs-header">Email</span>
+                        <a href="mailto:support@yourdomain.com" class="cs-link">apexhomeservice@hotmail.com</a>
+                    </div>
+                </li>
+                <li class="cs-li">
+                    <picture class="cs-icon-wrapper">
+                        <img aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/phone.svg" alt="phone icon" class="cs-icon" width="36" height="36" decoding="async">
+                    </picture>
+                    <div class="cs-flex-group">
+                        <span class="cs-header">Phone</span>
+                        <a href="tel:206-987-6543" class="cs-link">0499385998</a>
+                    </div>
+                </li>
+                <li class="cs-li">
+                    <picture class="cs-icon-wrapper">
+                        <img aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin.svg" alt="address icon" class="cs-icon" width="36" height="36" decoding="async">
+                    </picture>
+                    <div class="cs-flex-group">
+                        <span class="cs-header">Address</span>
+                        <a href="" class="cs-link"><span class="cs-block">8 Moonah Rd,</span> Alfords Point NSW 2234</a>
+                    </div>
+                </li>
+            </ul>
+            <!--  -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.414503397643!2d151.01929487595564!3d-33.98188547318357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12bf1509d2680d%3A0xb818fffe377421c4!2s8%20Moonah%20Rd%2C%20Alfords%20Point%20NSW%202234!5e0!3m2!1sen!2sau!4v1716650997776!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</section>
+                                
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+<link href="css/footer.css" type="text/css" rel="stylesheet">
+
+<footer id="cs-footer-1185">
+    <img class="cs-graphic" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/footer-v.svg" alt="logo" width="1920" height="163">
+    <!-- Subscribe Form -->
+    <div id="cta-1185">
+        <div class="cs-content">
+            <h2 class="cs-title">Subscribe Us</h2>
+            <form class="cs-form" name="Contact Form" method="post">
+                <input class="cs-input" type="email" id="cs-email-1185" name="find-us" placeholder="Email Address">
+                <button class="cs-button-solid cs-submit" type="submit">Subscribe Now</button>
+            </form>
+        </div>
+    </div>
+    <div class="cs-container">                        
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="">
+                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="image/Logo.png" alt="logo" width="100" height="20">
+            </a>
+            <p class="cs-text">
+                Apex Home Service is dedicated to transforming your home with top-notch renovations and exceptional craftsmanship. With over a decade of experience, we bring your vision to life with quality you can trust. Contact us today to start your next project.
+            </p>
+        </div>
+        <!-- Links -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Quick Links</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Services</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Projects</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Privacy Policy</a>
+            </li>
+        </ul>
+        <!-- Business Hours -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Business Hours</span>
+            </li>
+            <li class="cs-nav-li">
+                <span class="cs-nav-link">Monday to Saturday: 7am to 5pm</span>
+            </li>
+            <li class="cs-nav-li">
+                <span class="cs-nav-link">Sunday: Closed</span>
+            </li>
+            <li class="cs-nav-li">
+                <span class="cs-nav-link">Public Holidays: Closed</span>
+            </li>
+        </ul>
+        <!-- Contact Info -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Contact</span>
+            </li>
+            <li class="cs-nav-li">
+                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/phone-stroke.svg" alt="phone" width="24" height="24">
+                <a class="cs-nav-link cs-phone" href="tel:123-456-7890">0499385998</a>
+            </li>
+            <li class="cs-nav-li">
+                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/email-stroke.svg" alt="email" width="24" height="24">
+                <a class="cs-nav-link cs-email" href="mailto:info@stitchcarmechanics.com">apexhomeservice@hotmail.com</a>
+            </li>
+            <li class="cs-nav-li">
+                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin-stroke.svg" alt="pin" width="24" height="24">
+                <a class="cs-nav-link cs-address" href="" target="_blank" rel="noopener">
+                    18 Moonah Rd,<br> Alfords Point NSW 2234
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="cs-bottom">
+        <span class="cs-copyright">Copyright 2024 - <a class="cs-copyright-link" href="">Apex Home Service</a></span>
+    </div>
+    <!-- Background Image -->
+    <picture class="cs-background">
+        <img loading="lazy" decoding="async" src="image/backgroundfoot.jpg" alt="wheels" width="1280" height="568">
+    </picture>
+</footer>

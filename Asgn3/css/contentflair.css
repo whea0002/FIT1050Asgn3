@@ -1,0 +1,61 @@
+/* Center the container */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+}
+
+/* Existing styles */
+@media only screen and (min-width: 0rem) {
+    #list-1186 {
+        width: 100%;
+        max-width: 39.375rem;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    #list-1186 .cs-li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: clamp(1rem, 2.5vw, 1.25rem);
+    }
+    #list-1186 .cs-li-picture {
+        width: clamp(3.75rem, 6vw, 5rem);
+        height: clamp(3.75rem, 6vw, 5rem);
+        margin: 0;
+        background-color: #f7f7f7;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: none;
+    }
+    #list-1186 .cs-li-icon {
+        width: clamp(1.5rem, 3vw, 2rem);
+        height: auto;
+        display: block;
+    }
+    #list-1186 .cs-h3 {
+        font-size: 1.25rem;
+        line-height: 1.2em;
+        font-weight: 700;
+        text-align: left;
+        margin: 0 0 0.75rem 0;
+        color: var(--headerColor);
+    }
+    #list-1186 .cs-li-text {
+        font-size: 1rem;
+        line-height: 1.5em;
+        text-align: left;
+        margin: 0;
+        color: var(--bodyTextColor);
+    }
+}
